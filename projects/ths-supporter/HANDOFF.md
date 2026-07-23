@@ -14,9 +14,9 @@ cd THS-LP && python3 -m http.server 8878
 
 | ファイル:行 | 内容 |
 |---|---|
-| lp-general/index.html:191 | 製品写真プレースホルダー → メーカー提供写真（製品全体・黒・スパッツ型） |
+| lp-general/index.html:192 | 製品写真プレースホルダー → メーカー提供写真（製品全体・黒・スパッツ型） |
 | lp-medical/index.html:139 | 製品写真プレースホルダー → メーカー提供写真（製品単体・着圧表示のわかるもの） |
-| lp-general/index.html:301 | 価格表記（現在はストア誘導のみ）→ 表示可否確認後に税込価格を明記 |
+| lp-general/index.html:306 | 価格表記（現在はストア誘導のみ）→ 表示可否確認後に税込価格を明記 |
 | lp-medical/index.html:291 | 同上（FAQ内） |
 | lp-medical/index.html:158 | 論文出典のPII表記 → 正式書誌情報（著者・誌名・巻号・年）へ |
 | 両index.html:12-13 | 公開時に og:url・canonical を本番URLに設定 |
@@ -41,9 +41,13 @@ cd THS-LP && python3 -m http.server 8878
 - [x] research/ に3つの調査ドキュメント（01_product-facts / 02_lp-benchmark / 03_cvr-framework）
 - [x] LP1・LP2完成・モバイル/PC表示確認（375px iframe・1538pxで実機確認済み）
 - [x] review-log.md に各LP10回分のレビュー記録
-- [x] 全CTAが https://online.muranaka.co.jp/product/V0300001/ にリンク（LP1=6箇所・LP2=4箇所をgrep確認）
+- [x] 全CTAが https://online.muranaka.co.jp/product/V0300001/ にリンク（LP1=7箇所・LP2=4箇所をgrep確認）
 - [x] assets/images/image-brief.md（必須3画像＋装着手順4コマのプロンプトを収録）※画像生成はChatGPT自動操作で実施済み・生成物はassets/images/に保存済み
 - [x] NG表現ゼロ（review-log 回6のチェック表参照）
 - [x] 写真差し替えTODO一覧（本書§1）
 - [x] メーカー確認事項リスト（本書§2）
 - [ ] Lighthouse実測90+（公開環境で要計測 — ローカル構成上は軽量: LP1合計約480KB・外部依存はGoogle Fontsのみ）
+
+## 4. 第2期改修（2026-07-24）
+
+LP1を購入CV特化・一般消費者向けに5サイクル改修（詳細はreview-log.md第2期）。施設向けセクションは家族(贈りもの)セクションに置換し、施設導線はフッター上の1行注記のみ。CTAは7箇所・data-cta位置ラベル付きでGA4のcta_click(cta_positionパラメータ)により位置別計測が可能。

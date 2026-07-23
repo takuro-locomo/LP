@@ -39,7 +39,8 @@
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'cta_click', {
           link_url: a.href,
-          page_type: 'lp_general'
+          page_type: 'lp_general',
+          cta_position: a.getAttribute('data-cta') || 'unknown'
         });
       }
     });
