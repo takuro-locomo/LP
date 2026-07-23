@@ -127,6 +127,12 @@ a{color:var(--c-primary)}
 .feature-card p{font-size:16px}
 .feature-svg{width:150px;margin:16px auto 0}
 .product-placeholder{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center}
+.product-photo{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center}
+.product-photo img{border-radius:12px;max-height:360px;width:auto}
+.product-photo figcaption{font-size:13px;color:var(--c-text-sub)}
+.price-line{font-size:18px;margin-top:6px}
+.price-line strong{font-size:26px;color:var(--c-accent-dark);font-family:var(--font-head)}
+.price-line .tax{font-size:14px;color:var(--c-text-sub)}
 .placeholder-box{
   width:100%;min-height:200px;border:2px dashed #9db8b1;border-radius:12px;
   display:flex;align-items:center;justify-content:center;text-align:center;

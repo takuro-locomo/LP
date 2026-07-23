@@ -78,6 +78,9 @@ a{color:var(--c-blue)}
 .concept-visual{display:flex;flex-direction:column;gap:16px;align-items:center}
 .pressure-svg{width:100%;max-width:300px}
 .product-placeholder{width:100%;max-width:300px}
+.product-photo{width:100%;max-width:300px}
+.product-photo img{border-radius:10px}
+.product-photo figcaption{font-size:13px;color:#6b8299;margin-top:6px;text-align:center}
 .placeholder-box{min-height:170px;border:2px dashed #9eb4c6;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#6b8299;font-size:14px;background:repeating-linear-gradient(45deg,#f0f5f9,#f0f5f9 12px,#e9f0f6 12px,#e9f0f6 24px)}
 
 /* ---------- エビデンス ---------- */
